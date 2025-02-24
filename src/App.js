@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SplashScreen from "./SplashScreen";
-import Nav from "./Nav.js";
+import Welcome from "./Welcome.js";
+import AppRoutes from "./Routes.js";
 
 
 const App = () => {
@@ -11,7 +12,9 @@ const App = () => {
       {loading ? (
         <SplashScreen onFinish={() => setLoading(false)} />
       ) : (
-        <Nav />
+        <>
+        <AppRoutes />
+        </>
       )}
     </>
   );

@@ -1,17 +1,16 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import Home from "./Home.js"; // Ensure Home component exists
+import Userlogin from "./UserLogin.js";
+import Welcome from "./Welcome.js";
 
-
-function Routes() {
-    
-  return (
-    <Router>      
+function AppRoutes() {  // Changed name from "Routes" to "AppRoutes"
+  return (     
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Welcome />} />
+        <Route path="/user" element={<Userlogin />} />
       </Routes>
-    </Router>
   );
 }
-
-export default Routes;
-
+ 
+export default AppRoutes;
