@@ -56,7 +56,7 @@ code {
 .welcome p {
   color: var(--black);
 }
-a{
+a {
   text-decoration: none;
 }
 .main-btn {
@@ -96,44 +96,113 @@ a{
   color: var(--primary);
 }
 
-
-.user-login .head{
+.user-login .head {
   background: var(--primary);
   padding: 70px 0;
-  clip-path: ellipse(78% 98% at 220px 6px);
+  clip-path: ellipse(78% 97% at center top);
 }
-.user-login .head h2{
+.user-login .head h2 {
   font-size: 32px;
   font-weight: 500;
   margin: 0;
   text-align: center;
   color: var(--white);
 }
-.user-login .head h1{
+.user-login .head h1 {
   text-align: center;
   font-size: 56px;
   font-weight: 900;
   margin: 0;
   color: var(--white);
-
 }
-.main{
-padding: 20px;
+.main {
+  padding: 20px;
 }
-.input-label{
+.input-label {
   font-size: 18px;
   color: var(--primary);
   font-weight: 800;
 }
-.input{
-  width: calc(100%);
+.form-control {
+  /* width: calc(100%); */
   color: var(--primary);
   border-radius: 25px;
   border: 1px solid var(--primary);
-  margin:auto ;
+  margin: auto;
   height: 65px;
   box-shadow: 0 4px 30px #00000010;
+  padding: 10px 10px;
 }
-.text-center{
+.text-center {
   text-align: center;
+}
+.login-btn {
+  position: fixed;
+  bottom: 40px;
+  width: calc(100% - 40px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-dots {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.nav-dots span {
+  background: var(--primary);
+  opacity: 0.2;
+  display: block;
+  padding: 5px 15px;
+  border-radius: 30px;
+}
+.nav-dots span.active {
+  opacity: 1;
+}
+.otp input {
+  font-size: 36px;
+  text-align: center;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+.form-group .input-label {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.heading {
+  font-weight: bold;
+  font-size: 36px;
+  margin: 30px 0;
+}
+.heading2 {
+  font-weight: bold;
+  font-size: 28px;
+  margin: 30px 0;
+}
+.btn-radio {
+  color: var(--primary);
+  border-color: var(--primary);
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 25px;
+}
+.btn-check:focus + .btn,
+.btn-check:checked + .btn {
+  color: var(--white);
+  background: var(--primary);
+  box-shadow: none;
+}
+
+.skip-link {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: underline;
+  color: var(--primary);
+  display: block;
+  margin: 10px 0 20px;
 }
