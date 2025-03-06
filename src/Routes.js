@@ -7,11 +7,13 @@ import Otp from "./Otp.js";
 import FillDetails from "./FillDetails.js";
 import Intrest from "./Intrest.js";
 import JobPreference from "./JobPreference.js";
+import Home from "./Home.js";
 
 function AppRoutes() {  // Changed name from "Routes" to "AppRoutes"
   return (     
       <Routes>
         <Route path="/" element={<Welcome />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/user" element={<Userlogin />} />
         <Route path="/otp" element={<Otp />} />
         <Route path="/fill-details" element={<FillDetails />} />
