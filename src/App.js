@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import SplashScreen from "./SplashScreen";
 import Welcome from "./Welcome.js";
 import AppRoutes from "./Routes.js";
+import Menu from "./components/Menu.js";
 
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
       ) : (
         <>
         <AppRoutes />
+        <Menu />
         </>
       )}
     </>
