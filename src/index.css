@@ -221,10 +221,12 @@ a {
 .profile-details h2 {
   font-size: 18px;
   margin-bottom: 0;
+  color: var(--primary);
 }
 .profile-details h1 {
   font-size: 20px;
   font-weight: bold;
+  color: var(--primary);
   margin-bottom: 0;
 }
 .notification img {
@@ -353,14 +355,49 @@ a:hover {
   font-weight: bold;
   text-align: center;
   margin-bottom: 0;
+  font-size: 20px;
 }
 .top-title {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 42px;
+  margin-bottom: 30px;
 }
 .top-title a {
   position: absolute;
-  left: 10px;
+  left: 0;
+}
+.point-coin {
+  background: var(--primary);
+  padding: 12px 18px;
+  border-radius: 20px;
+  min-width: 120px;
+}
+.pointCoin-details p {
+  font-weight: 500;
+  font-size: 10px;
+  color: var(--white);
+}
+.pointCoin-details h2 {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--white);
+}
+.pro-link {
+  color: var(--black);
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  background: var(--white);
+  border-radius: 20px;
+  margin: 20px 0 0;
+  box-shadow: 0 0 10px #00000015;
+}
+.pro-link img {
+  max-height: 20px;
+}
+.pro-link:hover {
+  color: var(--black) !important;
 }
