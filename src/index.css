@@ -342,9 +342,25 @@ a {
   height: 100%;
   opacity: 0;
 }
-.main-input{
+.main-input {
   min-height: 30px;
 }
-a:hover{
+a:hover {
   color: var(--white) !important;
+}
+.top-title p {
+  color: var(--primary);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0;
+}
+.top-title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-title a {
+  position: absolute;
+  left: 10px;
 }

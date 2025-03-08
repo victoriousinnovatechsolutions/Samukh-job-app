@@ -8,6 +8,7 @@ import FillDetails from "./FillDetails.js";
 import Intrest from "./Intrest.js";
 import JobPreference from "./JobPreference.js";
 import Home from "./Home.js";
+import Profile from "./Profile.js";
 
 function AppRoutes() {  // Changed name from "Routes" to "AppRoutes"
   return (     
@@ -19,6 +20,7 @@ function AppRoutes() {  // Changed name from "Routes" to "AppRoutes"
         <Route path="/fill-details" element={<FillDetails />} />
         <Route path="/intrest" element={<Intrest />} />
         <Route path="/job-preference" element={<JobPreference/>} />
+        <Route path="/profile" element={<Profile/>} />
       </Routes>
   );
 }
