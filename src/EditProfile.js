@@ -1,6 +1,7 @@
 import React from "react";
 import PageTitle from "./components/PageTitle";
 import Profile from "./images/profile.png";
+import EditProfileIcon from "./images/edit-prifile-btn.png";
 import icon from "./images/coin-icon.png";
 import arrowlink from "./images/arrow-link.png";
 import { Link } from "react-router-dom";
@@ -16,8 +17,12 @@ const EditProfile = () => {
       <div className="">
         <PageTitle pageLink={backLink} pageTitle={title} />
         <div className="main">
-          <div className="form-group">
-            <input type="file" className="form-control" />
+          <div className="form-group text-center">
+            <img src={Profile} className="image-edit" />
+            <div className="position-relative" style={{maxWidth: "43px", maxHeight: `43px`, marginTop: `-50px`, right: `-63%` }}>
+              <img src={EditProfileIcon} />
+              <input type="file" className="form-control edit-btn-img" />
+            </div>
           </div>
           <div className="form-group">
             <p className="input-label">Name</p>

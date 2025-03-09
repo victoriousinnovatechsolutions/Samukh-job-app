@@ -11,6 +11,8 @@ import Home from "./Home.js";
 import ProfilePage from "./Profile.js";
 import EditProfile from "./EditProfile.js";
 import ChangePassword from "./ChangePassword.js";
+import TermsCondition from "./TermsCondition.js";
+import PrivacyPolicy from "./PrivacyPolicy.js";
 
 function AppRoutes() {  // Changed name from "Routes" to "AppRoutes"
   return (     
@@ -25,6 +27,8 @@ function AppRoutes() {  // Changed name from "Routes" to "AppRoutes"
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/edit-profile" element={<EditProfile />} />
         <Route path="/change-password" element={<ChangePassword />} />
+        <Route path="/terms&conditions" element={<TermsCondition />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
   );
 }
